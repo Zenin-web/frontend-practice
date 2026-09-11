@@ -12,14 +12,14 @@ function Home() {
     handleSubmit,
   } = useForm();
 
-  // GET
+  // GET — foydalanuvchilarni olish
   const {
     data,
     isLoading,
     error,
   } = useGetUsersQuery();
 
-  // POST
+  // POST — login ma'lumotlarini yuborish
   const [
     login,
     { isLoading: isLoggingIn },
@@ -45,7 +45,7 @@ function Home() {
 
       <div className="p-10 max-w-md">
         <h1 className="text-3xl font-bold mb-6">
-          Login
+          Login Page
         </h1>
 
         <form
